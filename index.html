@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca del Curso CSS</title>
+    <title>Curso CSS - Modo Oscuro</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
-    <meta name="theme-color" content="#2091F9">
+    <link rel="stylesheet" href="./css/dark.css"> <!-- NUEVO ESTILO OSCURO -->
+    <meta name="theme-color" content="#1b1b1b">
 </head>
 
 <body>
 
-    <header class="hero">
+    <header class="hero hero--dark">
         <nav class="nav container">
             <div class="nav__logo">
-                <h2 class="nav__title">Curso CSS.</h2>
+                <h2 class="nav__title">Curso CSS - Dark</h2>
             </div>
 
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items"><a href="index.html" class="nav__links">Inicio</a></li>
-                <li class="nav__items"><a href="about.html" class="nav__links">Acerca de</a></li>
+                <li class="nav__items"><a href="dark.html" class="nav__links">Modo Oscuro</a></li>
+                <li class="nav__items"><a href="#" class="nav__links">Recursos</a></li>
                 <li class="nav__items"><a href="#" class="nav__links">Contacto</a></li>
-                <li class="nav__items"><a href="#" class="nav__links">Blog</a></li>
                 <img src="./images/close.svg" class="nav__close" alt="Cerrar menú">
             </ul>
 
@@ -33,80 +34,174 @@
         </nav>
 
         <section class="hero__container container">
-            <h1 class="hero__title">Conoce más sobre el Curso de CSS</h1>
-            <p class="hero__paragraph">Este curso fue creado para ayudarte a dominar CSS de forma práctica, sencilla y divertida.</p>
-            <a href="index.html" class="cta">Volver al inicio</a>
+            <h1 class="hero__title">Aprende CSS con estilo — versión oscura.</h1>
+            <p class="hero__paragraph">
+                Un diseño mate, profesional y moderno para trabajar de noche sin cansar la vista.
+            </p>
+            <a href="#" class="cta cta--dark">Comienza ahora</a>
         </section>
     </header>
 
     <main>
+        <!-- SOBRE EL CURSO -->
         <section class="container about">
-            <h2 class="subtitle">Nuestra misión</h2>
+            <h2 class="subtitle">¿Qué tiene de especial esta versión?</h2>
             <p class="about__paragraph">
-                Enseñar CSS de manera moderna, enfocada en proyectos reales, para que cualquier persona pueda desarrollar sitios web profesionales.
+                Este diseño oscuro está optimizado para la comodidad visual. Utiliza colores mate,
+                tipografía clara y contrastes suaves para largas horas de trabajo.
             </p>
 
             <div class="about__main">
                 <article class="about__icons">
                     <img src="./images/code.svg" class="about__icon" alt="">
-                    <h3 class="about__title">Metodología práctica</h3>
+                    <h3 class="about__title">Paleta neutra</h3>
                     <p class="about__paragrah">
-                        Aprenderás mediante ejercicios y proyectos que simulan situaciones reales del desarrollo web.
+                        Tonos gris antracita, azul petróleo y blanco humo que cuidan tu vista sin perder estilo.
                     </p>
                 </article>
 
                 <article class="about__icons">
                     <img src="./images/paint.svg" class="about__icon" alt="">
-                    <h3 class="about__title">Diseño atractivo</h3>
+                    <h3 class="about__title">Diseño minimalista</h3>
                     <p class="about__paragrah">
-                        Nuestro enfoque combina teoría, práctica y diseño visual para que tus proyectos destaquen.
+                        Una interfaz sin distracciones, enfocada en el contenido y la legibilidad.
                     </p>
                 </article>
 
                 <article class="about__icons">
                     <img src="./images/shapes.svg" class="about__icon" alt="">
-                    <h3 class="about__title">Aprendizaje continuo</h3>
+                    <h3 class="about__title">Modo adaptable</h3>
                     <p class="about__paragrah">
-                        Tendrás acceso a actualizaciones del curso y nuevas lecciones sobre tecnologías modernas de CSS.
+                        Compatible con dispositivos móviles y pantallas de alto contraste.
                     </p>
                 </article>
             </div>
         </section>
 
-        <section class="knowledge">
-            <div class="knowledge__container container">
-                <div class="knowledege__texts">
-                    <h2 class="subtitle">¿Por qué aprender con nosotros?</h2>
-                    <p class="knowledge__paragraph">
-                        Porque combinamos el aprendizaje visual con la práctica directa. Cada módulo incluye ejercicios, videos explicativos y ejemplos descargables.
-                    </p>
-                    <a href="index.html" class="cta">Ir al curso</a>
-                </div>
+        <!-- TESTIMONIOS -->
+        <section class="testimony" id="testimony">
+            <div class="testimony__container container">
+                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before" alt="Anterior">
+                
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Jordan Alexander <span class="testimony__course">Estudiante de CSS</span></h2>
+                        <p class="testimony__review">
+                            “La versión oscura del curso me permite trabajar de noche sin fatigar la vista. Los colores mate son geniales.”
+                        </p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/face1.jpg" class="testimony__img" alt="Foto de alumno">
+                    </figure>
+                </section>
 
-                <figure class="knowledge__picture">
-                    <img src="./images/computer.jpg" class="knowledge__img" alt="">
-                </figure>
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Carolina Méndez <span class="testimony__course">Desarrolladora Frontend</span></h2>
+                        <p class="testimony__review">
+                            “Me encanta la estética del modo oscuro, hace que el aprendizaje se sienta moderno y profesional.”
+                        </p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/face2.jpg" class="testimony__img" alt="Foto de alumna">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Luis Rodríguez <span class="testimony__course">Diseñador UX/UI</span></h2>
+                        <p class="testimony__review">
+                            “El contraste es perfecto, no molesta y el diseño se ve muy pulido. Lo recomiendo totalmente.”
+                        </p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/face3.jpg" class="testimony__img" alt="Foto de alumno">
+                    </figure>
+                </section>
+
+                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next" alt="Siguiente">
             </div>
+        </section>
+
+        <!-- PREGUNTAS FRECUENTES -->
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas frecuentes</h2>
+            <p class="questions__paragraph">
+                Aquí encontrarás respuestas sobre el curso y su versión en modo oscuro.
+            </p>
+
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Puedo usar esta versión en mi móvil?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img" alt="">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">
+                            Sí, el modo oscuro es totalmente responsive y se adapta a cualquier tamaño de pantalla sin perder legibilidad.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Cómo cambio al modo claro?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img" alt="">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">
+                            Solo vuelve a la página principal (index.html), que utiliza el tema claro original del curso.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué colores usa este modo oscuro?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img" alt="">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">
+                            Principalmente gris antracita (#121212), azul petróleo apagado (#2d89ef) y blanco humo (#f5f5f5), con contrastes suaves y sin brillos.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="questions__offer">
+                <h2 class="subtitle">¿Listo para aprender CSS?</h2>
+                <p class="questions__copy">
+                    Empieza hoy con la versión que prefieras. Día o noche, CSS siempre a tu alcance.
+                </p>
+                <a href="index.html" class="cta cta--dark">Ir al curso</a>
+            </section>
         </section>
     </main>
 
-    <footer class="footer">
+    <!-- FOOTER -->
+    <footer class="footer footer--dark">
         <section class="footer__container container">
             <nav class="nav nav--footer">
-                <h2 class="footer__title">Curso CSS.</h2>
+                <h2 class="footer__title">Curso CSS Dark</h2>
                 <ul class="nav__link nav__link--footer">
                     <li class="nav__items"><a href="index.html" class="nav__links">Inicio</a></li>
-                    <li class="nav__items"><a href="about.html" class="nav__links">Acerca de</a></li>
+                    <li class="nav__items"><a href="dark.html" class="nav__links">Modo Oscuro</a></li>
+                    <li class="nav__items"><a href="#" class="nav__links">Recursos</a></li>
                     <li class="nav__items"><a href="#" class="nav__links">Contacto</a></li>
-                    <li class="nav__items"><a href="#" class="nav__links">Blog</a></li>
                 </ul>
             </nav>
 
             <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
-                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <h2 class="footer__newsletter">Suscríbete al boletín</h2>
                 <div class="footer__inputs">
-                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto" required>
-                    <input type="submit" value="Registrate" class="footer__submit">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrarte" class="footer__submit">
                 </div>
             </form>
         </section>
@@ -118,10 +213,12 @@
                 <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img" alt=""></a>
             </div>
 
-            <h3 class="footer__copyright">Derechos reservados &copy; 2025 Jordan Alexander</h3>
+            <h3 class="footer__copyright">Derechos reservados © 2025 Jordan Alexander</h3>
         </section>
     </footer>
 
     <script src="./js/menu.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
 </body>
 </html>
